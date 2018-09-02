@@ -1,28 +1,38 @@
-# Getting Started With Schematics
+# Hot Module Replacement (HMR) for Angular CLI v6
 
-This repository is a basic Schematic implementation that serves as a starting point to create and publish Schematics to NPM.
+Enabling Hot Module Replacement (HMR) feature in your Angular CLI v6 project by using Angular Schematics.
 
-### Testing
+## Usage
 
-To test locally, install `@angular-devkit/schematics-cli` globally and use the `schematics` command line tool. That tool acts the same as the `generate` command of the Angular CLI, but also has a debug mode.
+To enable HMR feature in your Angular CLI v6 project, just enter the following command:
 
-Check the documentation with
 ```bash
-schematics --help
+ng add hmr-enabled
 ```
 
-### Unit Testing
+## Developments & Tests
+
+```batch
+git clone https://github.com/doggy8088/ngcli-hmr-enabled.git
+cd ngcli-hmr-enabled
+npm install
+npm run link
+
+cd ..
+ng new demo1
+cd demo1
+schematics hmr-enabled:ng-add --dry-run
+schematics hmr-enabled:ng-add
+
+npm unlink
+```
+
+## Unit Testing
+
+There is no bandwidth for unit testing at this time.
 
 `npm run test` will run the unit tests, using Jasmine as a runner and test framework.
 
-### Publishing
+## Links
 
-To publish, simply do:
-
-```bash
-npm run build
-npm publish
-```
-
-That's it!
- 
+* [Enabling Hot Module Replacement (HMR) in Angular 6 - The Info Grid](https://theinfogrid.com/tech/developers/angular/enabling-hot-module-replacement-angular-6/)
