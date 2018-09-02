@@ -1,9 +1,10 @@
 {
   "name": "hmr-enabled",
-  "version": "0.0.0",
-  "description": "A blank schematics",
+  "version": "0.1.0",
+  "description": "Enabling Hot Module Replacement (HMR) feature in your Angular CLI v6 project",
   "scripts": {
     "build": "tsc -p tsconfig.json",
+    "link": "npm run build && npm link",
     "test": "npm run build && jasmine src/**/*_spec.js"
   },
   "keywords": [

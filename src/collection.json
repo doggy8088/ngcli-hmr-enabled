@@ -1,9 +1,9 @@
 {
   "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
   "schematics": {
-    "hmr-enabled": {
-      "description": "A blank schematic.",
-      "factory": "./hmr-enabled/index#hmrEnabled"
+    "ng-add": {
+      "description": "Enabling Hot Module Replacement (HMR) feature in your Angular CLI v6 project",
+      "factory": "./hmr-enabled"
     }
   }
 }
